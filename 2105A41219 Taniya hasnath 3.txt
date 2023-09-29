@@ -1,0 +1,497 @@
+optimization:
+1.finding the optimum solution 
+2.lower the time complexity
+*idrative method
+1.repeated approach 
+2.recurssion
+*dynamic programming 
+_________________________________________________________________
+
+1.For calculation which program works efficiently we use time complexity
+_________________________________________________________________
+
+DYNAMIC PROGRAMMING
+----------------------------
+1.In greedy approach whatever is the solution for the problem given at the first go is fixed
+ as the final solution
+
+NOTE:
+1.This is not the best approach for all the scenarios,however it also works for some cases
+2.In dynamic programming ,we will be finding out all the possible solutions for the given
+ problem out of which the best will be selected
+
+
+TIME AND SPACE COMPLEXITY:
+-----------------------------
+AYMPTOTIC NOTATIONS:
+Three types of notations are:
+1.[O(n)]
+2.omega
+3.theta
+___________________________________________________________
+
+Seive algorithm used to eliminate duplicate values
+___________________________________________________________
+IMP POINTS:
+Id():command used to declare memory allocation in python
+
+___________________________________________________________
+{
+int....4
+char..1
+}
+space:8bytes
+12                       int=3,char=1,int=4
+5 bytes                   
+                         space complexity is 8 bytes 
+space
+
+union
+{
+int...4
+char...1 byte
+}
+___________________________________________________________
+
+struct
+{
+double
+char
+}                       
+8 bytes
+8
+=1                       4+4+8+1+7                       
+=7                       
+struct                   space complexity is 24 bytes
+{
+int 
+double
+char
+}
+24
+__________________________________________________________
+
+Polynomial theorem f(n)=n+1
+which is O(n) big o of n (or) order of n
+
+__________________________________________________________
+
+data structures
+algorithms
+dynmic programming
+___________________________________________________________
+
+#include<stdio.h>
+int main()
+{
+int i,n=5;
+for(i=0;i<n;i++)
+printf("%d\n",i);
+printf("final i:%d",i);
+return 0;
+}
+output:
+0
+1
+2
+3
+4
+final i=5
+__________________________________________________________________
+
+for(i=1;i<n;i+2)
+{
+statements
+}
+n/2
+f(n)=n/2
+Degree of polynomial is n 
+so n/anything is n 
+so here also o(n)
+*so irrespective of iteration time is gonna be same o(n)
+___________________________________________________________________
+get 1 number as input find sum of digits of given number
+from while and for
+___________________________________________________________________
+n=int9input())
+temp=n
+sum-0
+___________________________________________________________________
+==========================================================================================
+DAY-2
+==========================================================================================
+TIME COMPLEXITY
+for(i=0;i<n;i++)....//n+1 times
+{
+for(j=0;j<n;j++)    //n*(n+1)
+{
+Statements;   //n*n----n square
+}
+}
+;
+Time complexity=o(n square)
+_______________________________________________________________________________________
+ #IMP POINTS:
+-> Primitive data types 
+1.int
+2.float
+3.char
+4.double
+-Python supports non-primitive data type, whereas C and java support primitive data types
+______________________________________________________________________________________-
+PROBlEM
+implement a 2d array and rotate the matrix 90 degrees
+
+
+______________________________________________________________________________________
+
+for(i=0;i<n;i++)
+{
+for(i=0;i<n;i++)
+{
+statements;
+}
+};     // i=0 then 0<0 no              i    j
+                                     0    nothing
+ so when i 0....0 times
+1..... 1 time                        1    0 will execute
+2...2 times 
+so 1+2+3+4+5                               1 will stop
+
+                                     2    0,1 executes
+                                          2 will stop
+_____________________________________________________________________________________________
+ p=0,
+for(i=1;p<=n;i++)
+{
+p=p+1;
+}
+   1  0+1 bcs p=p+1..when N is 0     now assuming n times when will s
+   2  1+2=3....N is 1                      
+   3  1+2+3=6
+   .
+   .
+   .
+   k 1+2+...k
+_____________________________________________________________________________________________
+ANALYSE
+i=1    1 time
+i=2    2 times (1*2)
+i=3    4 times (1*2)*2=2 power 2
+i=4    8 times (1*2)*2)*2= 2 power 3
+so when stops i>=n
+              i=2 power k
+              2 power k>=n
+              k log n base 2
+so time complexity O(log n base 2)
+_________________________________________________________________________________________________
+
+create 1d array that should contain numbers 10 to 50
+_________________________________________________________________________________________
+
+DERIVED FORMULAE
+for(i=0;i<n;i++) ----O(n)
+for(i=0;i<n;i+2) ----O(n)
+for(i=n;i>1;i--) ----O(n)
+ 
+for(i=1;i<n;i=i*2)--- O(log n base 2)
+for(i=1;i>1;i=i*3)--- O(log n base 3)
+for(i=n;i>1;i=i/2)--- O(log n base 2)
+______________________________________________________________________________________________
+
+> Constant    Time complexity: O(1)...
+> Linear      Time complexity: O(n)...
+> Logarithmic Time complexity: O(log n)...
+> Quadratic   Time complexity: O(n^2)...
+> Exponential Time complexity: O(2^n)
+___________________________________________________________________________________________________
+
+FINAL SUMMARY:
+-----------------------
+i++ i-- i+2  O(n)
+
+i*2 i/2      log(n)  base 2
+
+p=0
+for p<n i++
+p=p+i
+
+O(sqrt(n)
+________________________________________________________________________________
+SPACE COMPLEXITY :
+1.array of size n will take n space and 2d array will take n*n order of n^2 space
+constant space complexity order of n
+2.same amount of space regardless of the input size of n is called constant complexity
+ex: sum of array elements and linear search
+3.it is order of 1 beacause space is not depending upon values
+_______________________________________________________________________________
+create an array sum that array elements using functions
+__________________________________________________________________________________
+differences between space and time complexity > my dout
+___________________________________________________________________________________
+ASSIGNMENT:
+1.what is stack and heap memory where we are using heap
+2.learn quick sort
+3.factorial,fabanocci using recursion
+___________________________________________________________________________________
+1.linear compplexity:O(n)
+2.log-linear complexity:O(nlogn)
+-> when the space complexity of an algorithm grows proportionally to the input size
+linear search:O(1)
+polynomial complexity:o(n2):
+_______________________________________________________________________________________
+
+  char x --> 1+3                 double                char-> 1+7
+  int y  --> 4      16           int      16           double-> 8    24
+  double -->8                    char                  int -> 4+4   
+
+  int    -->4                    double
+  char   -->1+3       16         char      16
+  double -->8                    int
+ ________________________________________________________________________________________
+===========================================================================
+DAY-3
+=============================================================================
+Hatch:extensible python project manager.
+_______________________________________________________________
+-BITWISE OPERATORS:
+ C        Phython       Java
+ 
+ &           &           & -> AND
+ |           |           | -> OR
+ ~           ~           ~ -> Tilt
+__________________________________________________________________
+--Integer is represented by 32 bits or 4 bytes
+_____________________________________________________________________
+ARITHEMETIC OPERATOR PROGRAMS IN PYTHON:
+
+-priority order is (/,*,+,%,-)
+
+print(7+2&4+3&9)
+output: 1
+
+print(print(10*4/6+3-1%2)
+output: 8.666666666
+
+print(10&4+3)
+output: 2
+
+print(10|3&4)
+output:10
+
+print(10&4~2)
+output:invalid syntax
+
+print(6|3&9+6)
+output:7
+
+print(2~4^3*2)             invalid beacuse negation is not valid 
+output:invalid syntax      between two numbers
+
+print(~9&4+6)              the negation is written at the starting of the number 
+output:6                   so the operator is valid here and gives output
+
+->BITWISE PRIORITY ORDER:
+ 1.~
+ 2.&
+ 3.^
+ 4.|
+______________________________________________________________________________________
+2 types
+exclusive (XOR)
+inclusive (OR)
+______________________________________________________________________________
+ BIT MANIPULATION:
+XOR^
+---------------------------------------------
+even 1's :0
+odd  1's :1
+
+xor of number itself is 0
+xor of number with 0 is number itself
+----------------------------------------------
+RIGHT SHIFT: int 8 bytes of memory
+5>>1
+5/2 ans 2
+----------------------------------------------
+EXAMPLES:
+
+print(5^5)     
+output:0
+
+print(5^5^5)              even 1's :0
+output:5                  odd  1's :1
+
+print(5^0)
+output:5
+
+print(0^5)
+output:5
+---------------------------------------------
+LEFT SHIFT: int 32 bytes of memory 
+5-0101
+5<,2
+5*power(2,2) ands 20
+
+10<<3
+10*power(2,3)=80
+
+9<<4
+9*power(2,4)=144
+---------------------------------------------
+print(9<<2)
+output:36
+
+print(10<<3)
+output:80
+
+print(5<<2)
+----------------------------------------------
+output:20
+_____________________________________________
+Q)find the mising smallest positive integer
+____________________________________________
+Q)1.find out which occurs once Q)
+ 
+xor of all elements...same elements will get cancelled 
+
+def findSingle(ar,n):
+   res=ar[0]
+#DO XOR of all elements and return
+for i in range(1,n):
+  res=res^ar[i]
+return res
+ar=[2,3,5,4,5,3,4,2,88]
+print(findSingle(ar,len(ar)))
+----------------------------------------------
+output:88
+______________________________________________
+
+Q) 2. swap 2 numbers using XOR
+
+a=100
+b=200
+print("a:",a,"b:",b)
+
+a=a^b 
+a=100^200
+b=a^b
+b=100^200^200 #ans 200 200 gets cancelled b=100
+a=a^b  
+a=100^200^100 #ans 100 100 gets cancelleded b=200
+print("a:",a,"b:",b)
+-----------------------------------------------
+output:a=100 b=200
+       a=200 b=100
+_______________________________________________
+
+Q)3.For the given number n check the kth bit is set or not
+_______________________________________________
+
+Q)3.1 
+For the given number n find out xor of all numbers
+input:5
+ans should be 1^2^3^4^5
+output 1
+
+n=12
+xor=0
+for i in range(1,n+1):
+xor=xor^i
+print(xor)
+
+output:12
+---------------------------------------------
+#O(n)
+#optimize
+n=1 1
+2  3
+3  0
+4  4
+5  1 
+6  7
+7  0
+8  8
+9  1 
+
+n=7
+xor=0
+if n%4==0:
+   print(n)
+elif n%4==1:
+   print(1)
+elif n%4==2:
+   print(n+1)
+elif n%4==3:
+   print(0)
+above is O(1) no loop
+------------------------------------------
+output:0
+__________________________________________________
+Q)4 find all the xor within the given range
+  dont use loop getO(1)
+from previous pattern we can find out 1 to any number from that figure 
+4 to 9
+xor(1 to 9)^xor(1 to 3)
+
+__________________________________________________
+Q)5. check number is odd or even 
+normal way n%2==0 even else odd
+fastest way using bitwise
+n=13
+if(n&1==0):
+   print("Even")
+else:
+   print("odd")
+-------------------------------------------------------
+output:odd
+
+Explanation:every number is formed in ways of powers of 2
+            thats why 2 ^0,1,2
+__________________________________________________________
+
+#Fibanocci-ith term iterative 
+n=int(input("enter the term:"))
+n1=0
+n2=1
+if(n<0):
+  print("not posssible")
+else:
+  for i in range(0,n-1)
+      n3=n1+n2
+      n1=n2
+      n2=n3
+print(n2)
+________________________________________________________
+\\sum of array elements
+
+#include<stdio.h>
+int main()
+{
+  int n;
+    printf("Enter arry size: ");
+    scanf("%d",&n);
+    int arr[n];
+    int s=0;
+    printf("Enter elements: ");
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+        s+=arr[i];
+    }
+    printf("%d",s);
+}
+___________________________________________________________
+
+//generate list:
+
+ def generate_lists_of_lists(n):
+     table_list=[]
+     for num in range(n):
+         row=[]
+         for i in range(n):
+             row.append(i)
+             table_list.append(row)
+             return table_list
+             print(generate_lists_of_lists(10))
+         
+_________________________________________________________
